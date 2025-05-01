@@ -30,6 +30,12 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    transition: all 0.3s ease-in-out; /* ✅ transição suave */
+  }
+  
+  .menu li a:hover {
+    color: #a85555; 
+    text-decoration: underline;
   }
   
   .icon-user {
@@ -106,15 +112,18 @@ body {
   
   .card img {
     width: 100%;
+    height: 160px; /* 🔥 força todas as imagens a mesma altura */
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
   }
+  
   
   .card h4 {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    margin: 12px 0;
+    margin: 8px 0 12px 0;
   }
   
   .card button {
@@ -129,7 +138,7 @@ body {
     gap: 5px;
     justify-content: center;
     height: 40px;
-    margin-top: auto;
+    margin-top: 0;
   }
 
   .card button::before {
@@ -140,7 +149,8 @@ body {
   /* ===== PACOTE ESPECIAL ===== */
   .pacote-especial {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px; 
   }
   
   .botao-pacote {
@@ -159,14 +169,19 @@ body {
     justify-content: space-around;
     padding: 20px;
     font-weight: bold;
+    
   }
   
   footer a {
     color: black;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
   }
   
   footer a:visited {
     color: black;
   }
   
+  footer a:hover {
+    text-decoration: underline; 
+  }
