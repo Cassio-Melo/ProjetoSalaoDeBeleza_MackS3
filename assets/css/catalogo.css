@@ -182,6 +182,7 @@ body {
     color: black;
   }
   
-  footer a:hover {
-    text-decoration: underline; 
+  footer a:hover { 
+    color: #a85555; 
+    text-decoration: underline;
   }
