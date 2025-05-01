@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,9 @@
 
 body, html {
   height: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f6;
+  color: #111;
 }
 
 .container {
@@ -14,7 +17,6 @@ body, html {
   height: 100vh;
 }
 
-/* LADO ESQUERDO */
 .left {
   width: 50%;
   position: relative;
@@ -32,10 +34,9 @@ body, html {
   left: 20px;
   font-weight: bold;
   font-size: 24px;
-  color: black;
+  color: #111;
 }
 
-/* LADO DIREITO */
 .right {
   width: 50%;
   background-color: #f1d8d1;
@@ -53,7 +54,7 @@ body, html {
   top: 20px;
   right: 20px;
   background-color: #e8e6de;
-  color: black;
+  color: #111;
   padding: 8px 12px;
   border-radius: 8px;
   text-decoration: none;
@@ -81,8 +82,8 @@ body, html {
 }
 
 .btn {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -94,50 +95,40 @@ body, html {
   background-color: #333;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
-
   .left, .right {
     width: 100%;
     height: auto;
   }
-
   .left img {
     height: 250px;
     object-fit: cover;
   }
-
   .right {
     padding: 20px;
   }
-
   .text h1 {
     font-size: 28px;
   }
-
   .text p {
     font-size: 18px;
   }
-
   .buttons {
     flex-direction: column;
     gap: 15px;
   }
-
   .btn {
     width: 100%;
   }
-
   .colab-link {
     top: 10px;
     right: 10px;
     font-size: 12px;
     padding: 6px 10px;
   }
-
   .logo {
     font-size: 20px;
     top: 10px;

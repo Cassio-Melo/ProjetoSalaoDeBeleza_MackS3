@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
 header {
     background-color: #eed0c7;
     display: flex;
@@ -66,7 +65,6 @@ nav a:hover::after {
     transform: scale(1.1);
 }
 
-/* BANNER */
 .banner {
     background: url("salao.png") no-repeat center center;
     background-size: cover;
@@ -94,7 +92,6 @@ nav a:hover::after {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* CONTEÚDO - atualizado para centralizar */
 .conteudo {
     display: flex;
     justify-content: center;
