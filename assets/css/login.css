@@ -1,25 +1,25 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
 }
 
 body, html {
   height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f6;
+  color: #111;
 }
 
 .container {
   display: flex;
   height: 100vh;
-  border: 2px solid purple;
 }
 
+/* LADO ESQUERDO */
 .left {
-  flex: 1;
-  background-image: url('../img/fundo.jpg'); /* substitua pelo caminho correto */
-  background-size: cover;
-  background-position: center;
+  width: 50%;
   position: relative;
 }
 
@@ -35,28 +35,20 @@ body, html {
   left: 20px;
   font-weight: bold;
   font-size: 24px;
-  color: black;
-  
-  a {
-    text-decoration: none; 
-    color: black;           
-  }
-  a:visited,
-  a:hover,
-  a:active {
-    color: black;
-    text-decoration: none;
-  }
+  color: #111;
 }
 
+/* LADO DIREITO */
 .right {
-  flex: 1;
-  background-color: #f1d4ce;
+  width: 50%;
+  background-color: #f1d8d1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  position: relative;
+  padding: 40px;
+  text-align: center;
 }
 
 h1 {
@@ -85,8 +77,8 @@ input {
 
 button {
   padding: 1rem;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-weight: bold;
   font-size: 1rem;
   border: none;
@@ -99,7 +91,7 @@ button:hover {
   background-color: #333;
 }
 
-/* Responsivo */
+/* RESPONSIVIDADE */
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -107,13 +99,16 @@ button:hover {
 
   .left, .right {
     width: 100%;
-    height: 50vh;
+    height: auto;
   }
 
-  .logo {
-    width: 120px;
-    top: 15px;
-    left: 20px;
+  .left img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .right {
+    padding: 20px;
   }
 
   h1 {
@@ -122,5 +117,11 @@ button:hover {
 
   form {
     width: 100%;
+  }
+
+  .logo {
+    font-size: 20px;
+    top: 10px;
+    left: 10px;
   }
 }
