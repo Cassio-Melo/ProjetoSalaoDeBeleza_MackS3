@@ -4,7 +4,7 @@ body {
     background-color: #fff;
   }
   
-  /* Navegação */
+  /* ===== NAVBAR ===== */
   .navbar {
     background-color: #e9c9c7;
     display: flex;
@@ -21,10 +21,12 @@ body {
   .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
   }
   
-  .menu a {
+  .menu li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -32,10 +34,9 @@ body {
   
   .icon-user {
     font-size: 20px;
-    margin-left: auto;
   }
   
-  /* Banner */
+  /* ===== BANNER ===== */
   .banner {
     background-image: url('../img/banner.png');
     background-size: cover;
@@ -44,42 +45,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
   
-  .texto-banner {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-  }
-  
-  .texto-banner h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 5px #000;
+  .banner h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    font-family: Arial Black, Impact, sans-serif; 
   }
   
-  /* Seção de serviços */
-  .servicos {
-    padding: 40px;
-    text-align: center;
-    
-  }
-
+  
+  /* ===== SEÇÃO DE SERVIÇOS ===== */
   .faixa-servicos {
     background-color: #e9dbd1;
     padding: 10px 0;
     text-align: center;
+    margin-top: 0;
+    width: 100%;
   }
+  
   
   .faixa-servicos h3 {
     margin: 0;
     font-size: 20px;
     font-weight: bold;
+  }
+  
+  .servicos {
+    padding: 0 0 40px 0;
+    text-align: center;
   }
   
   
@@ -88,6 +87,7 @@ body {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
   
   .card {
@@ -95,35 +95,49 @@ body {
     padding: 10px;
     width: 220px;
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-height: 360px;
+    box-sizing: border-box;
+    justify-content: space-between; 
   }
   
   .card img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
   
-  /* Botão AGENDAR */
+  .card h4 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 12px 0;
+  }
+  
   .card button {
-    background-color: #f0d7d5;
+    background-color: #dcbfb6;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 16px;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
     justify-content: center;
+    height: 40px;
+    margin-top: auto;
   }
-  
+
   .card button::before {
     content: '📅';
     font-size: 16px;
   }
   
-  /* Pacote Especial */
+  /* ===== PACOTE ESPECIAL ===== */
   .pacote-especial {
     text-align: center;
     margin-top: 40px;
@@ -138,7 +152,7 @@ body {
     cursor: pointer;
   }
   
-  /* Rodapé */
+  /* ===== RODAPÉ ===== */
   footer {
     background-color: #e9c9c7;
     display: flex;
