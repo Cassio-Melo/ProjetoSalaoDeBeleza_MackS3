@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #eed0c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.perfil img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    transition: transform 0.3s;
+}
+
+.perfil img:hover {
+    transform: scale(1.1);
+}
+
+/* BANNER */
+.banner {
+    background: url("salao.png") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.banner h1 {
+    position: relative;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTEÚDO - atualizado para centralizar */
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 100px;
+    background-color: #fff;
+    text-align: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+.imagem img {
+    width: 280px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.texto {
+    flex: 1;
+    max-width: 700px;
+    text-align: center;
+}
+
+.texto h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #111;
+    font-weight: 700;
+    border-left: 4px solid #111;
+    padding-left: 15px;
+}
+
+.texto p {
+    font-size: 17px;
+    margin-bottom: 22px;
+    color: #444;
+    text-align: justify;
+}
