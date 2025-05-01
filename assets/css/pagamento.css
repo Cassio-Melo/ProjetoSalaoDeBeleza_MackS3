@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #eed0c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+.perfil img {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    padding: 40px;
+}
+
+main h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.formulario-pagamento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna-esquerda, .coluna-direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+input[disabled] {
+    background-color: #e5e5e5;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #eed0c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 14px;
+}
+
+footer .local {
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
