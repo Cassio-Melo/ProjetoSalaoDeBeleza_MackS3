@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #e9c9c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+  }
+  
+  header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .perfil img {
+    width: 30px;
+  }
+  
+  /* Aqui trocado de .cadastro para .perfil */
+  main.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  main.perfil h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  main.perfil form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  main.perfil form input {
+    background-color: #eae5df;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  footer.footer {
+    background-color: #e9c9c7;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-weight: bold;
+  }
+  
+  footer.footer a {
+    text-decoration: underline;
+    color: black;
+  }
+  
