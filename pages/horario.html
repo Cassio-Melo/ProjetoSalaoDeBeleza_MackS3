@@ -5,32 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alteração de Horários</title>
   <link rel="stylesheet" href="/assets/css/horario.css" />
+  <link rel="stylesheet" href="/assets/css/shared/headerAdm.css"> <link rel="stylesheet" href="/assets/css/shared/footerAdm.css">
   <script src="/assets/js/horario.js"></script>
-
 </head>
 <body>
 
   <!-- Cabeçalho -->
-  <header class="topo">
+  <header class="header">
     <div class="logo">StudioLux</div>
-    <nav class="navegacao">
+    <nav class="nav">
       <a href="#">CADASTRAR NOVO FUNCIONÁRIO</a>
       <a href="#">FLUXO DO CAIXA</a>
     </nav>
   </header>
 
-  
   <main>
-    <h2>DIGITE OS NOVOS HORÁRIOS:</h2>
-
+    <h2>DIGITE OS NOVOS HORÁRIOS:</h2><br><br><br>
     <form class="formulario" onsubmit="atualizarHorario(event)">
-      <label>HORÁRIO DE ABERTURA:
-        <input type="time" id="horaAbertura" />
-      </label>
+      <label><b>HORÁRIO DE ABERTURA:</b></label>
+        <input type="time" id="horaAbertura"/><br>
 
-      <label>HORÁRIO DE FECHAMENTO:
-        <input type="time" id="horaFechamento" />
-      </label>
+      <label><b>HORÁRIO DE FECHAMENTO:</b></label>
+        <input type="time" id="horaFechamento"/><br>
 
       <button type="submit">ATUALIZAR HORÁRIO</button>
     </form>

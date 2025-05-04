@@ -90,3 +90,29 @@ body {
 .botao:hover {
   background-color: #333;
 }
+
+.formulario {
+  margin-bottom: 50px;
+}
+
+.grupo-campo-duplo {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.grupo-campo-duplo .campo2 {
+  flex: 1;
+}
+
+.campo2 input {
+  width: 265px;
+  padding: 17px 20px;
+  background-color: #ece8e3;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+

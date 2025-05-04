@@ -6,6 +6,7 @@
     <title>StudioLux</title>
     <link rel="stylesheet" href="/assets/css/agendamento.css"/>
     <link rel="stylesheet" href="/assets/css/shared/header.css"> <link rel="stylesheet" href="/assets/css/shared/footer.css"> 
+    <script src="/assets/js/formatacaoCampos.js"></script>
 </head>
 <body>
     <header>
@@ -17,11 +18,12 @@
             <a href="#">VER PACOTE ADQUIRIDO</a>
         </nav>
         <div class="perfil">
+          <a href="/pages/perfilCliente.html">
             <img src="/assets/img/icone_perfil.png" alt="Ícone de perfil de usuário">
+          </a>
         </div>
     </header>
 
-  <main>
     <main class="conteudo">
       <h2>MARCAR AGENDAMENTO</h2>
       <form class="formulario">
@@ -29,21 +31,69 @@
           <input type="text" value="**NOME SERVIÇO ESCOLHIDO" readonly>
         </div>
         <div class="campo">
-          <input type="text" placeholder="NOME">
+          <input type="text" placeholder="NOME" required>
         </div>
         <div class="campo">
-          <input type="tel" placeholder="CELULAR">
+          <input type="text" id="celular" name="celular" placeholder="CELULAR" required />
         </div>
         <div class="campo2">
-          <input type="date">
+          <input type="date" required>
         </div>
         <div class="campo2">
-          <input type="time">
+          <input type="time" required>
         </div>
         <button type="submit" class="botao">CONFIRMAR AGENDAMENTO</button>
       </form>
+      <hr>
+
+      <!-- REMARCAR AGENDAMENTO -->
+      <h2>REMARCAR AGENDAMENTO</h2>
+      <form class="formulario">
+        <div class="campo">
+          <input type="text" placeholder="NOME DO SERVIÇO" required>
+        </div>
+
+        <div class="grupo-campo-duplo">
+          <div class="campo2">
+            <label for="data-agendada">DATA AGENDADA:</label>
+            <input type="date" id="data-agendada" required>
+          </div>
+          <div class="campo2">
+            <label for="nova-data">NOVA DATA:</label>
+            <input type="date" id="nova-data" required>
+          </div>
+        </div>
+
+        <div class="grupo-campo-duplo">
+          <div class="campo2">
+            <label for="horario-agendado">HORÁRIO AGENDADO:</label>
+            <input type="time" id="horario-agendado" required>
+          </div>
+          <div class="campo2">
+            <label for="novo-horario">NOVO HORÁRIO:</label>
+            <input type="time" id="novo-horario" required>
+          </div>
+        </div>
+
+        <button type="submit" class="botao">REMARCAR AGENDAMENTO</button>
+      </form>
+      <hr>
+
+      <!-- CANCELAR AGENDAMENTO -->
+      <h2>CANCELAR AGENDAMENTO</h2>
+      <form class="formulario">
+        <div class="campo">
+          <input type="text" placeholder="NOME DO SERVIÇO" required>
+        </div>
+        <div class="campo2">
+          <input type="date" required>
+        </div>
+        <div class="campo2">
+          <input type="time" required>
+        </div>
+        <button type="submit" class="botao">CANCELAR AGENDAMENTO</button>
+      </form>
     </main>
-  </main>
 
   <footer class="footer">
     <span><strong>SÃO PAULO</strong></span>
