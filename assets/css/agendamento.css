@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.conteudo {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.conteudo h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.campo input {
+  width: 600px;
+  padding: 17px 20px;
+  background-color: #ece8e3;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.campo input[readonly] {
+  font-weight: bold;
+  text-align: center;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.campo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.campo2 input {
+  width: 160px;
+  padding: 17px 20px;
+  background-color: #ece8e3;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.campo2 input[readonly] {
+  font-weight: bold;
+  text-align: center;
+}
+
+.campo2 label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Botão */
+.botao {
+  width: 635px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #333;
+}
