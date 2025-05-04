@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +5,10 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8f6;
-    color: #333;
-    line-height: 1.6;
-}
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+  }
 
 header {
     background-color: #eed0c7;
@@ -53,45 +51,6 @@ nav a:hover::after {
     width: 100%;
 }
 
-.perfil img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    transition: transform 0.3s;
-}
-
-.perfil img:hover {
-    transform: scale(1.1);
-}
-
-.banner {
-    background: url("salao.png") no-repeat center center;
-    background-size: cover;
-    text-align: center;
-    padding: 80px 0;
-    position: relative;
-}
-
-.banner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.banner h1 {
-    position: relative;
-    font-size: 48px;
-    color: #fff;
-    font-weight: 800;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px 30px;
-    border-radius: 12px;
-    display: inline-block;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
 .conteudo {
     display: flex;
     justify-content: center;
@@ -105,7 +64,7 @@ nav a:hover::after {
 }
 
 .imagem img {
-    width: 280px;
+    width: 360px;
     border-radius: 18px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     object-fit: cover;
@@ -132,3 +91,25 @@ nav a:hover::after {
     color: #444;
     text-align: justify;
 }
+
+.banner {
+    background-image: url('/assets/img/banner_sobre_nos.png');
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner h2 {
+    color: white;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    font-family: Arial Black, Impact, sans-serif;
+  }

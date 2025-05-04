@@ -2,67 +2,73 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>StudioLux</title>
+  <title>Catálogo - StudioLux</title>
   <link rel="stylesheet" href="/assets/css/catalogo.css">
+  <link rel="stylesheet" href="/assets/css/shared/header.css"> <link rel="stylesheet" href="/assets/css/shared/footer.css"> <link rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <h1 class="logo">StudioLux</h1>
-      </div>
-      <ul class="menu">
-        <li><a href="#">INICIO</a></li>
-        <li><a href="catalogo.html">SERVIÇOS</a></li>
-        <li><a href="#agendamentos">AGENDAMENTOS</a></li>
-        <li><a href="#pacote">VER PACOTE</a></li>
-      </ul>
-      <div class="icon-user">👤</div>
+
+  <header class="header">
+    <div class="logo">StudioLux</div>
+    <nav>
+        <a href="/pages/catalogo.html">INÍCIO</a>
+        <a href="/pages/agendamentos.html">AGENDAMENTOS</a>
+        <a href="/pages/pacote.html">VER PACOTE</a>
+        <a href="#">VER PACOTE ADQUIRIDO</a>
     </nav>
+    <div class="perfil">
+        <img src="/assets/img/icone_perfil.png" alt="Ícone de perfil de usuário">
+    </div>
+</header>
 
     <div class="banner">
-        <h2>REALCE SUA BELEZA CONOSCO</h2>
-      </div>
+      <h2>REALCE SUA BELEZA CONOSCO</h2>
+    </div>
   </header>
 
   <main>
     <section id="servicos" class="servicos">
       <div class="faixa-servicos">
         <h3>SERVIÇOS</h3>
-      </div>
+      </div><br><br>
       <div class="cards">
         <!-- Card 1 -->
         <div class="card">
           <img src="/assets/img/corte.png" alt="Corte de Cabelo">
-          <h4>CORTE DE CABELO</h4>
-          <button>AGENDAR</button>
+          <h3>CORTE DE CABELO</h3>
+          <h4><b>VALOR: R$ 65,00</b></h4>
+          <a href="/pages/agendamentos.html" class="botao-agendar">Agendar</a>
         </div>
 
         <!-- Card 2 -->
         <div class="card">
           <img src="/assets/img/manicure.png" alt="Manicure + Pedicure">
-          <h4>MANICURE + PEDICURE</h4>
-          <button>AGENDAR</button>
+          <h3>MANICURE + PEDICURE</h3>
+          <h4><b>VALOR: R$ 60,00</b></h4>
+          <a href="/pages/agendamentos.html" class="botao-agendar">Agendar</a>
         </div>
 
         <!-- Card 3 -->
         <div class="card">
           <img src="/assets/img/sobrancelha.png" alt="Design de Sobrancelha">
-          <h4>DESIGN DE SOBRANCELHA</h4>
-          <button>AGENDAR</button>
+          <h3>DESIGN DE SOBRANCELHA</h3>
+          <h4><b>VALOR: R$ 30,00</b></h4>
+          <a href="/pages/agendamentos.html" class="botao-agendar">Agendar</a>
         </div>
       </div>
     </section>
 
-    <section class="pacote-especial" id="pacote">
-      <button class="botao-pacote">VER PACOTE ESPECIAL</button>
+    <section class="pacote-especial">
+      <div class="botao-pacote">
+        <a href="/pages/pacote.html">VER PACOTE ESPECIAL</a>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <span><strong>SÃO PAULO</strong></span>
-    <span>HORÁRIO DE FUNCIONAMENTO<br>8H ÀS 17H</span>
-    <span><a href="sobrenos.html">SOBRE NÓS</a></span>
+    <span>Horário de Funcionamento<br>8:00 - 17:00</span>
+    <span><a href="/pages/sobrenos.html">SOBRE NÓS</a></span>
   </footer>
 </body>
 </html>

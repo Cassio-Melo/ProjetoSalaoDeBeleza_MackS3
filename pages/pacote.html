@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Pacote Especial | StudioLux</title>
-  <link rel="stylesheet" href="/assets/css/pacote.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacote - StudioLux</title>
+    <link rel="stylesheet" href="/assets/css/pacote.css"/>
+    <link rel="stylesheet" href="/assets/css/shared/header.css"> <link rel="stylesheet" href="/assets/css/shared/footer.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">StudioLux</h1>
-      <ul class="menu">
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="catalogo.html">SERVIÇOS</a></li>
-        <li><a href="#">AGENDAMENTOS</a></li>
-        <li><a href="pacote.html">VER PACOTE</a></li>
-      </ul>
-      <div class="icon-user">👤</div>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">StudioLux</div>
+        <nav>
+            <a href="/pages/catalogo.html">INÍCIO</a>
+            <a href="/pages/agendamentos.html">AGENDAMENTOS</a>
+            <a href="/pages/pacote.html">VER PACOTE</a>
+            <a href="#">VER PACOTE ADQUIRIDO</a>
+        </nav>
+        <div class="perfil">
+            <img src="/assets/img/icone_perfil.png" alt="Ícone de perfil de usuário">
+        </div>
+    </header>
 
-  <main class="pacote-container">
-    <div class="titulo-pacote">
-        <img src="/assets/img/presente.png" alt="ícone de presente" class="icone">
-        <div class="titulos-texto">
-          <h2>CONFIRA NOSSO PACOTE</h2>
-          <h3>PACOTE ESPECIAL</h3>
+    <section class="pacote-container">
+      <div class="pacote-header">
+        <img src="/assets/img/icone_pacote.png" alt="Ícone de uma caixinha demonstrando um pacote">
+        <h2>CONFIRA NOSSO PACOTE</h2>
+      </div>
+  
+      <div class="pacote-imagens">
+        <img src="/assets/img/sobrancelha.png" alt="Sobrancelha">
+        <img src="/assets/img/manicure.png" alt="Manicure">
+        <img src="/assets/img/corte.png" alt="Corte de cabelo">
+      </div>
+
+      <div class="pacote-info">
+        <ul class="pacote-descricao">
+          <li>Lavagem, corte, escova e finalização profissional do cabelo<br><strong>Quantidade: 2x</strong></li><br>
+          <li>Design de sobrancelhas + henna<br><strong>Quantidade: 2x</strong></li><br>
+          <li>Manicure e pedicure (com spa dos pés)<br><strong>Quantidade: 5x</strong></li><br>
+          <p><b>De R$ <s>530,00</s> por R$ 430,00</b></p>
+        </ul>
+      
+        <div class="botao-pacote">
+          <a href="/pages/pagamento.html">ADQUIRIR PACOTE</a>
         </div>
       </div>
-      
+    </section>
 
-    <div class="imagens-servicos">
-      <img src="/assets/img/sobrancelha.png" alt="Sobrancelha">
-      <img src="/assets/img/manicure.png" alt="Manicure">
-      <img src="/assets/img/corte.png" alt="Corte de cabelo">
-    </div>
-
-    <ul class="lista-servicos">
-      <li>• Lavagem, corte, escova e finalização profissional do cabelo<br><strong>Quantidade: 3x</strong></li>
-      <li>• Design de sobrancelhas + henna<br><strong>Quantidade: 5x</strong></li>
-      <li>• Manicure e pedicure (com spa dos pés)<br><strong>Quantidade: 7x</strong></li>
-      <li>• Pintar cabelo com várias opções (Californiana – Luzes – Morena Iluminada...)<br><strong>Quantidade: 1x</strong></li>
-      <li><strong>• Brinde especial: uma máscara capilar da Truss</strong></li>
-    </ul>
-
-    <button class="botao-adquirir">ADQUIRIR PACOTE</button>
-  </main>
+    <footer class="footer">
+      <span><strong>SÃO PAULO</strong></span>
+      <span>Horário de Funcionamento<br>8:00 - 17:00</span>
+      <span><a href="/pages/sobrenos.html">SOBRE NÓS</a></span>
+    </footer>
 </body>
 </html>
