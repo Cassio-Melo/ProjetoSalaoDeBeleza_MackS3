@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   header {
@@ -16,13 +19,18 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header nav a:hover{
+    color: #a85555;
+    text-decoration: none;
   }
   
   .perfil img {
     width: 30px;
   }
   
-  /* Aqui trocado de .cadastro para .perfil */
   main.perfil {
     display: flex;
     flex-direction: column;
@@ -59,10 +67,17 @@ body {
     justify-content: space-around;
     padding: 15px;
     font-weight: bold;
+    margin-top: auto;
   }
   
   footer.footer a {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer a:hover {
+    color: #a85555;
+    text-decoration: none;
   }
   
