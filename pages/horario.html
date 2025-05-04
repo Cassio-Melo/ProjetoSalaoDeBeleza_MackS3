@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alteração de Horários</title>
+  <link rel="stylesheet" href="/assets/css/horario.css" />
+  <script src="/assets/js/horario.js"></script>
+
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="topo">
+    <div class="logo">StudioLux</div>
+    <nav class="navegacao">
+      <a href="#">CADASTRAR NOVO FUNCIONÁRIO</a>
+      <a href="#">FLUXO DO CAIXA</a>
+    </nav>
+  </header>
+
+  
+  <main>
+    <h2>DIGITE OS NOVOS HORÁRIOS:</h2>
+
+    <form class="formulario" onsubmit="atualizarHorario(event)">
+      <label>HORÁRIO DE ABERTURA:
+        <input type="time" id="horaAbertura" />
+      </label>
+
+      <label>HORÁRIO DE FECHAMENTO:
+        <input type="time" id="horaFechamento" />
+      </label>
+
+      <button type="submit">ATUALIZAR HORÁRIO</button>
+    </form>
+  </main>
+
+  <!-- footer -->
+  <footer class="rodape">
+    <span id="horario-footer">HORÁRIO DE FUNCIONAMENTO <strong>8H ÀS 17H</strong></span>
+    <a href="#">ALTERAR HORÁRIO DE FUNCIONAMENTO</a>
+  </footer>
